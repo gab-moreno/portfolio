@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Price Analysis â€” Before &amp; After</title>
+<title>Price Analysis &ndash; Before &amp; After</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 <style>
-  /* â”€â”€â”€ Reset & Base â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- Reset & Base ------------------------------------------------- */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
@@ -33,7 +34,7 @@
     color: var(--ink);
   }
 
-  /* â”€â”€â”€ Slide Container â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- Slide Container ---------------------------------------------- */
   .deck {
     width: 100vw;
     height: 100vh;
@@ -67,7 +68,7 @@
     transition: opacity .35s ease, transform .35s ease;
   }
 
-  /* â”€â”€â”€ Navigation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- Navigation --------------------------------------------------- */
   .nav {
     position: fixed;
     bottom: 32px;
@@ -114,7 +115,7 @@
 
   .dot.active { background: var(--blue); transform: scale(1.3); }
 
-  /* â”€â”€â”€ Slide Number â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- Slide Number ------------------------------------------------- */
   .slide-num {
     position: fixed;
     top: 28px;
@@ -125,7 +126,7 @@
     z-index: 100;
   }
 
-  /* â”€â”€â”€ Typography helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- Typography helpers ------------------------------------------ */
   .eyebrow {
     font-size: 11px;
     font-weight: 600;
@@ -147,7 +148,7 @@
     max-width: 600px;
   }
 
-  /* â”€â”€â”€ Divider â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- Divider ------------------------------------------------------ */
   .rule {
     width: 48px;
     height: 3px;
@@ -156,13 +157,13 @@
     margin: 20px 0 28px;
   }
 
-  /* â”€â”€â”€ SLIDE 1 â€” Title â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- SLIDE 1 - Title ---------------------------------------------- */
   #s1 { background: var(--bg); text-align: center; }
   #s1 h1 { max-width: 820px; }
   #s1 .sub { margin: 20px auto 0; }
   #s1 .rule { margin: 20px auto 28px; }
 
-  /* â”€â”€â”€ SLIDE 2 â€” The Old Way â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- SLIDE 2 - The Old Way ---------------------------------------- */
   #s2 { background: var(--bg); align-items: flex-start; }
 
   .steps-grid {
@@ -193,11 +194,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 18px;
   }
 
-  .step-card.bad  .step-icon { background: #FDDADA; }
-  .step-card.good .step-icon { background: #C4EED9; }
+  .step-card.bad  .step-icon { background: #FDDADA; color: var(--red); }
+  .step-card.good .step-icon { background: #C4EED9; color: var(--green); }
 
   .step-card h3 { font-size: 13px; font-weight: 600; }
 
@@ -227,15 +228,15 @@
     right: -12px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 16px;
+    font-size: 14px;
     color: var(--muted);
     z-index: 1;
   }
 
-  /* â”€â”€â”€ SLIDE 3 â€” The New Way â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- SLIDE 3 - The New Way ---------------------------------------- */
   #s3 { background: var(--bg); align-items: flex-start; }
 
-  /* â”€â”€â”€ SLIDE 4 â€” Side by Side â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- SLIDE 4 - Side by Side --------------------------------------- */
   #s4 { background: var(--bg2); }
 
   .compare-wrap {
@@ -287,11 +288,11 @@
 
   .compare-list li .icon {
     flex-shrink: 0;
-    font-size: 15px;
-    margin-top: 1px;
+    font-size: 14px;
+    margin-top: 2px;
   }
 
-  /* â”€â”€â”€ SLIDE 5 â€” Impact â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- SLIDE 5 - Impact --------------------------------------------- */
   #s5 { background: var(--bg); text-align: center; }
 
   .metrics {
@@ -329,7 +330,7 @@
     max-width: 160px;
   }
 
-  /* â”€â”€â”€ SLIDE 6 â€” App Highlights â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- SLIDE 6 - App Highlights ------------------------------------- */
   #s6 { background: var(--bg); align-items: flex-start; }
 
   .feature-grid {
@@ -358,14 +359,15 @@
   }
 
   .feature-icon {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1;
+    color: var(--blue);
   }
 
   .feature-card h3 { font-size: 14px; font-weight: 600; }
   .feature-card p  { font-size: 12.5px; color: var(--muted); line-height: 1.55; }
 
-  /* â”€â”€â”€ SLIDE 7 â€” Thank You â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- SLIDE 7 - Thank You ----------------------------------------- */
   #s7 { background: var(--ink); color: #FFFFFF; text-align: center; }
 
   #s7 h2 { color: #FFFFFF; }
@@ -387,7 +389,7 @@
 
   .tag-pill span { color: var(--blue); font-weight: 600; }
 
-  /* â”€â”€â”€ Logo / brand mark â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- Logo / brand mark -------------------------------------------- */
   .brand {
     position: fixed;
     top: 28px;
@@ -407,7 +409,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .brand-name {
@@ -416,7 +418,7 @@
     color: var(--muted);
   }
 
-  /* â”€â”€â”€ Keyboard hint â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* --- Keyboard hint ------------------------------------------------ */
   .hint {
     position: fixed;
     bottom: 32px;
@@ -432,160 +434,160 @@
 </head>
 <body>
 
-<!-- â”€â”€â”€ Brand â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- --- Brand --------------------------------------------------------- -->
 <div class="brand">
-  <div class="brand-icon">ðŸ“Š</div>
+  <div class="brand-icon"><i class="fa-solid fa-chart-bar"></i></div>
   <div class="brand-name">Price Analysis</div>
 </div>
 
-<!-- â”€â”€â”€ Slide Number â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- --- Slide Number -------------------------------------------------- -->
 <div class="slide-num" id="slideNum">1 / 7</div>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+<!-- =================================================================
      SLIDES
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+================================================================== -->
 <div class="deck" id="deck">
 
-  <!-- â”€â”€ SLIDE 1 â€” Title â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- -- SLIDE 1 - Title -------------------------------------------- -->
   <section class="slide active" id="s1">
     <div class="eyebrow">Procurement Transformation</div>
     <h1>From Manual Grind<br/>to One-Click Analysis</h1>
     <div class="rule"></div>
-    <p class="sub">How a custom-built price analysis tool eliminated hours of error-prone work and gave the team a consistent, professional output â€” every time.</p>
+    <p class="sub">How a custom-built price analysis tool eliminated hours of error-prone work and gave the team a consistent, professional output &mdash; every time.</p>
   </section>
 
-  <!-- â”€â”€ SLIDE 2 â€” The Old Way â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- -- SLIDE 2 - The Old Way --------------------------------------- -->
   <section class="slide" id="s2">
     <div class="eyebrow">Before</div>
     <h2>The Old Process</h2>
     <div class="steps-grid">
 
       <div class="step-card bad">
-        <div class="step-icon">ðŸ“‹</div>
+        <div class="step-icon"><i class="fa-solid fa-clipboard"></i></div>
         <h3>Find Request in Smartsheet</h3>
         <p>Navigate to the row, locate the right record among many, email the report to yourself.</p>
         <div class="badge pain">Manual lookup</div>
-        <span class="arrow-connector">â€º</span>
+        <span class="arrow-connector"><i class="fa-solid fa-chevron-right"></i></span>
       </div>
 
       <div class="step-card bad">
-        <div class="step-icon">ðŸ§¹</div>
+        <div class="step-icon"><i class="fa-solid fa-broom"></i></div>
         <h3>Clean Up the Email</h3>
         <p>Manually strip empty fields and white-space from the emailed report before it was usable.</p>
         <div class="badge pain">Wasted prep time</div>
-        <span class="arrow-connector">â€º</span>
+        <span class="arrow-connector"><i class="fa-solid fa-chevron-right"></i></span>
       </div>
 
       <div class="step-card bad">
-        <div class="step-icon">ðŸ”</div>
+        <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
         <h3>Hunt for Supplier Quotes</h3>
         <p>Search your inbox by full subject line to locate each quote across multiple threads.</p>
         <div class="badge pain">Error-prone search</div>
-        <span class="arrow-connector">â€º</span>
+        <span class="arrow-connector"><i class="fa-solid fa-chevron-right"></i></span>
       </div>
 
       <div class="step-card bad">
-        <div class="step-icon">ðŸ“</div>
+        <div class="step-icon"><i class="fa-solid fa-file-lines"></i></div>
         <h3>Build Analysis Manually</h3>
-        <p>Manually assemble a price comparison table in a document â€” highly prone to copy-paste mistakes.</p>
+        <p>Manually assemble a price comparison table in a document &mdash; highly prone to copy-paste mistakes.</p>
         <div class="badge pain">High error risk</div>
-        <span class="arrow-connector">â€º</span>
+        <span class="arrow-connector"><i class="fa-solid fa-chevron-right"></i></span>
       </div>
 
       <div class="step-card bad">
-        <div class="step-icon">ðŸ–¼ï¸</div>
+        <div class="step-icon"><i class="fa-solid fa-image"></i></div>
         <h3>Paste as Image to Customer</h3>
-        <p>Screenshot the table and paste it as an image â€” no formulas, ugly formatting, no audit trail.</p>
+        <p>Screenshot the table and paste it as an image &mdash; no formulas, ugly formatting, no audit trail.</p>
         <div class="badge pain">Unprofessional output</div>
       </div>
 
     </div>
   </section>
 
-  <!-- â”€â”€ SLIDE 3 â€” The New Way â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- -- SLIDE 3 - The New Way --------------------------------------- -->
   <section class="slide" id="s3">
     <div class="eyebrow">After</div>
     <h2>The New Process</h2>
     <div class="steps-grid">
 
       <div class="step-card good">
-        <div class="step-icon">âš¡</div>
+        <div class="step-icon"><i class="fa-solid fa-bolt"></i></div>
         <h3>Power Automate Flow</h3>
         <p>A unique request code triggers the flow. The request is automatically saved to the correct customer folder in SharePoint.</p>
         <div class="badge win">Zero manual filing</div>
-        <span class="arrow-connector">â€º</span>
+        <span class="arrow-connector"><i class="fa-solid fa-chevron-right"></i></span>
       </div>
 
       <div class="step-card good">
-        <div class="step-icon">ðŸ“‚</div>
+        <div class="step-icon"><i class="fa-solid fa-folder-open"></i></div>
         <h3>Auto-Organized Folders</h3>
-        <p>Quotes from suppliers land under the right request folder, grouped by customer â€” consistent across every request.</p>
+        <p>Quotes from suppliers land under the right request folder, grouped by customer &mdash; consistent across every request.</p>
         <div class="badge win">Always findable</div>
-        <span class="arrow-connector">â€º</span>
+        <span class="arrow-connector"><i class="fa-solid fa-chevron-right"></i></span>
       </div>
 
       <div class="step-card good">
-        <div class="step-icon">ðŸ”‘</div>
+        <div class="step-icon"><i class="fa-solid fa-key"></i></div>
         <h3>Search by Unique Code</h3>
         <p>One search with the unique request code finds the exact folder instantly. No inbox hunting needed.</p>
         <div class="badge win">Instant retrieval</div>
-        <span class="arrow-connector">â€º</span>
+        <span class="arrow-connector"><i class="fa-solid fa-chevron-right"></i></span>
       </div>
 
       <div class="step-card good">
-        <div class="step-icon">ðŸ“¤</div>
+        <div class="step-icon"><i class="fa-solid fa-upload"></i></div>
         <h3>Upload PDFs to App</h3>
         <p>Copy and paste quote PDFs into the Streamlit app. Power Automate extracts the data and loads it automatically.</p>
         <div class="badge win">Auto extraction</div>
-        <span class="arrow-connector">â€º</span>
+        <span class="arrow-connector"><i class="fa-solid fa-chevron-right"></i></span>
       </div>
 
       <div class="step-card good">
-        <div class="step-icon">ðŸ“¥</div>
+        <div class="step-icon"><i class="fa-solid fa-download"></i></div>
         <h3>Download Final Excel</h3>
-        <p>Review the live table, adjust tax or qty if needed, and generate a formatted professional Excel â€” in seconds.</p>
+        <p>Review the live table, adjust tax or qty if needed, and generate a formatted professional Excel &mdash; in seconds.</p>
         <div class="badge win">Publication-ready</div>
       </div>
 
     </div>
   </section>
 
-  <!-- â”€â”€ SLIDE 4 â€” Side by Side â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- -- SLIDE 4 - Side by Side ------------------------------------- -->
   <section class="slide" id="s4">
     <div class="eyebrow">Comparison</div>
     <h2>Before vs. After</h2>
     <div class="compare-wrap">
 
       <div class="compare-col before">
-        <div class="compare-col-title">âœ•&nbsp; Before</div>
+        <div class="compare-col-title"><i class="fa-solid fa-xmark"></i>&nbsp; Before</div>
         <ul class="compare-list">
-          <li><span class="icon">ðŸ“­</span>Email yourself the Smartsheet report every time</li>
-          <li><span class="icon">ðŸ§¹</span>Manually clean whitespace and empty fields</li>
-          <li><span class="icon">ðŸ”</span>Search inbox by full subject line for every quote</li>
-          <li><span class="icon">ðŸ“‹</span>Manually assemble a price table â€” one typo ruins it</li>
-          <li><span class="icon">ðŸ•</span>Double-check everything by hand</li>
-          <li><span class="icon">ðŸ–¼ï¸</span>Paste a screenshot image to the customer</li>
-          <li><span class="icon">ðŸ—‚ï¸</span>No central storage â€” quotes scattered in email threads</li>
+          <li><span class="icon"><i class="fa-solid fa-envelope-open"></i></span>Email yourself the Smartsheet report every time</li>
+          <li><span class="icon"><i class="fa-solid fa-broom"></i></span>Manually clean whitespace and empty fields</li>
+          <li><span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>Search inbox by full subject line for every quote</li>
+          <li><span class="icon"><i class="fa-solid fa-clipboard"></i></span>Manually assemble a price table &mdash; one typo ruins it</li>
+          <li><span class="icon"><i class="fa-solid fa-clock"></i></span>Double-check everything by hand</li>
+          <li><span class="icon"><i class="fa-solid fa-image"></i></span>Paste a screenshot image to the customer</li>
+          <li><span class="icon"><i class="fa-solid fa-folder-tree"></i></span>No central storage &mdash; quotes scattered in email threads</li>
         </ul>
       </div>
 
       <div class="compare-col after">
-        <div class="compare-col-title">âœ“&nbsp; After</div>
+        <div class="compare-col-title"><i class="fa-solid fa-check"></i>&nbsp; After</div>
         <ul class="compare-list">
-          <li><span class="icon">âš¡</span>Unique code triggers automated filing to SharePoint</li>
-          <li><span class="icon">ðŸ“‚</span>Quotes saved automatically under the right customer folder</li>
-          <li><span class="icon">ðŸ”‘</span>One search by code â€” folder found instantly</li>
-          <li><span class="icon">ðŸ“¤</span>Drag PDFs into app â€” data extracted automatically</li>
-          <li><span class="icon">âœï¸</span>Sanity-check the editable live table; adjust tax or qty</li>
-          <li><span class="icon">ðŸ“Š</span>Download a formatted, formula-driven Excel in seconds</li>
-          <li><span class="icon">ðŸ—ƒï¸</span>All requests organized by customer in SharePoint â€” forever</li>
+          <li><span class="icon"><i class="fa-solid fa-bolt"></i></span>Unique code triggers automated filing to SharePoint</li>
+          <li><span class="icon"><i class="fa-solid fa-folder-open"></i></span>Quotes saved automatically under the right customer folder</li>
+          <li><span class="icon"><i class="fa-solid fa-key"></i></span>One search by code &mdash; folder found instantly</li>
+          <li><span class="icon"><i class="fa-solid fa-upload"></i></span>Drag PDFs into app &mdash; data extracted automatically</li>
+          <li><span class="icon"><i class="fa-solid fa-pencil"></i></span>Sanity-check the editable live table; adjust tax or qty</li>
+          <li><span class="icon"><i class="fa-solid fa-chart-bar"></i></span>Download a formatted, formula-driven Excel in seconds</li>
+          <li><span class="icon"><i class="fa-solid fa-box-archive"></i></span>All requests organized by customer in SharePoint &mdash; forever</li>
         </ul>
       </div>
 
     </div>
   </section>
 
-  <!-- â”€â”€ SLIDE 5 â€” Impact â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- -- SLIDE 5 - Impact ------------------------------------------- -->
   <section class="slide" id="s5">
     <div class="eyebrow">Business Impact</div>
     <h2>What Changed</h2>
@@ -609,61 +611,61 @@
       </div>
 
       <div class="metric-card">
-        <div class="metric-num">âœ“</div>
-        <div class="metric-label">Auto winner detection â€” lowest price highlighted instantly</div>
+        <div class="metric-num"><i class="fa-solid fa-check"></i></div>
+        <div class="metric-label">Auto winner detection &mdash; lowest price highlighted instantly</div>
       </div>
 
       <div class="metric-card">
-        <div class="metric-num">âœ“</div>
+        <div class="metric-num"><i class="fa-solid fa-check"></i></div>
         <div class="metric-label">Centralized SharePoint storage by customer &amp; request</div>
       </div>
 
       <div class="metric-card">
-        <div class="metric-num">âœ“</div>
-        <div class="metric-label">Scalable â€” same process works for any customer or supplier count</div>
+        <div class="metric-num"><i class="fa-solid fa-check"></i></div>
+        <div class="metric-label">Scalable &mdash; same process works for any customer or supplier count</div>
       </div>
 
     </div>
   </section>
 
-  <!-- â”€â”€ SLIDE 6 â€” App Features â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- -- SLIDE 6 - App Features ------------------------------------- -->
   <section class="slide" id="s6">
     <div class="eyebrow">The Tool</div>
     <h2>App Highlights</h2>
     <div class="feature-grid">
 
       <div class="feature-card">
-        <div class="feature-icon">ðŸ“„</div>
-        <h3>PDF â†’ Data Automatically</h3>
-        <p>Upload supplier quote PDFs. Power Automate extracts all line items and loads them into a review table â€” no re-typing.</p>
+        <div class="feature-icon"><i class="fa-solid fa-file-pdf"></i></div>
+        <h3>PDF &rarr; Data Automatically</h3>
+        <p>Upload supplier quote PDFs. Power Automate extracts all line items and loads them into a review table &mdash; no re-typing.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">âœï¸</div>
+        <div class="feature-icon"><i class="fa-solid fa-table"></i></div>
         <h3>Live Editable Table</h3>
         <p>Review, add, or remove rows directly in the app. Adjust quantities, descriptions, or supplier entries on the fly.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">ðŸ’²</div>
+        <div class="feature-icon"><i class="fa-solid fa-percent"></i></div>
         <h3>Configurable Tax</h3>
-        <p>Set the tax percentage once (default 12%). All totals â€” including the final Excel â€” update instantly.</p>
+        <p>Set the tax percentage once (default 12%). All totals &mdash; including the final Excel &mdash; update instantly.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">ðŸ‘€</div>
+        <div class="feature-icon"><i class="fa-solid fa-eye"></i></div>
         <h3>HTML Preview</h3>
-        <p>See the full price comparison table â€” organized by product code and supplier â€” before generating the file.</p>
+        <p>See the full price comparison table &mdash; organized by product code and supplier &mdash; before generating the file.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">ðŸ†</div>
+        <div class="feature-icon"><i class="fa-solid fa-trophy"></i></div>
         <h3>Auto Winner Detection</h3>
         <p>The lowest-priced supplier per item is automatically highlighted in green in the final Excel. No manual comparison needed.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon">ðŸ“¥</div>
+        <div class="feature-icon"><i class="fa-solid fa-file-excel"></i></div>
         <h3>Professional Excel Output</h3>
         <p>Generates a formatted, formula-driven Excel with merged cells, color-coded headers, and dynamic price calculations.</p>
       </div>
@@ -671,27 +673,27 @@
     </div>
   </section>
 
-  <!-- â”€â”€ SLIDE 7 â€” Thank You â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- -- SLIDE 7 - Thank You ---------------------------------------- -->
   <section class="slide" id="s7">
     <div class="eyebrow" style="color: rgba(255,255,255,.4);">Thank You</div>
     <h2>Questions?</h2>
     <div class="rule"></div>
-    <p class="sub">This tool was built in-house to solve a real, recurring pain point â€” and it's already saving hours per week while improving the quality and consistency of every customer-facing quote.</p>
-    <div class="tag-pill">Built with <span>Streamlit Â· Power Automate Â· SharePoint</span></div>
+    <p class="sub">This tool was built in-house to solve a real, recurring pain point &mdash; and it&rsquo;s already saving hours per week while improving the quality and consistency of every customer-facing quote.</p>
+    <div class="tag-pill">Built with <span>Streamlit &middot; Power Automate &middot; SharePoint</span></div>
   </section>
 
 </div><!-- /deck -->
 
-<!-- â”€â”€â”€ Navigation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- --- Navigation --------------------------------------------------- -->
 <nav class="nav">
-  <button class="nav-btn" id="prevBtn" onclick="navigate(-1)" disabled>â€¹</button>
+  <button class="nav-btn" id="prevBtn" onclick="navigate(-1)" disabled><i class="fa-solid fa-chevron-left"></i></button>
   <div class="progress-dots" id="dots"></div>
-  <button class="nav-btn" id="nextBtn" onclick="navigate(1)">â€º</button>
+  <button class="nav-btn" id="nextBtn" onclick="navigate(1)"><i class="fa-solid fa-chevron-right"></i></button>
 </nav>
 
-<div class="hint">â† â†’ to navigate</div>
+<div class="hint">&larr; &rarr; to navigate</div>
 
-<!-- â”€â”€â”€ Script â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- --- Script ------------------------------------------------------- -->
 <script>
   const slides = Array.from(document.querySelectorAll('.slide'));
   const total  = slides.length;
